@@ -1,0 +1,87 @@
+.header-container {
+  width: 100%;
+  /* background-color: lue; */
+  display: flex;
+  height: 450px;
+  /* padding: 10%; */
+}
+
+.left-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.right-container {
+  flex: 1;
+  /* display: flex; */
+  position: relative;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .backClip {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .backClip {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.carouselContainer {
+  animation: slide-animation 20s infinite alternate;
+}
+
+.slider-item {
+  flex: 0 0 10%;
+  transition: 0.3s ease-in;
+  background-color: white !important;
+  color: black !important;
+  font-family: "Lora";
+  font-weight: 500;
+}
+
+.slider-item:hover {
+  transform: scale(1.2);
+}
+@keyframes slide-animation {
+  0% {
+    transform: translateX(50%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  75% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+
+.carouselContainer:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  /* 0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 9));
+  } */
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      calc(-100% * 2)
+    ); /* Adjust based on the number of items */
+  }
+}

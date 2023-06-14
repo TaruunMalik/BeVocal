@@ -1,0 +1,14 @@
+.blog-container {
+  display: flex;
+  justify-content: center;
+}
+
+.blog-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+.left-blog-container {
+  display: flex;
+  flex-direction: column;
+}

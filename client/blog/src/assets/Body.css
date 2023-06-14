@@ -1,0 +1,26 @@
+.body-container {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+  padding: 0 20rem;
+  margin-top: 5rem;
+}
+.categories-wrapper-fixed {
+  display: flex;
+  justify-content: center;
+  flex: 2;
+  top: 500px;
+  position: sticky;
+}
+.blogs-wrapper {
+  background-color: red;
+}
+.categories-wrapper {
+  display: flex;
+  justify-content: center;
+  flex: 2;
+  top: 5.5rem;
+
+  position: sticky;
+  height: calc(100vh - 150px);
+}
